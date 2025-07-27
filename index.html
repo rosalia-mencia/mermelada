@@ -188,12 +188,6 @@
             overflow: hidden;
         }
 
-        .about-image::before {
-            content: '📸';
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
         /* Productos */
         .products {
             background: linear-gradient(135deg, #fdf8f9, #f5eef0);
@@ -233,11 +227,6 @@
             font-size: 1rem;
             position: relative;
             overflow: hidden;
-        }
-
-        .product-image::before {
-            content: '🍓';
-            font-size: 4rem;
         }
 
         .product-title {
@@ -307,7 +296,7 @@
             right: 30px;
             background: linear-gradient(135deg, #C35965, #C24C5B);
             color: white;
-            border: none;
+            border: 2px solid white;
             width: 70px;
             height: 70px;
             border-radius: 50%;
@@ -516,26 +505,19 @@
                         <p>Hoy, ese secreto lo compartimos contigo, en cada cucharada.</p>
                     </div>
                     <div class="about-image fade-in">
-                        <div style="text-align: center;">
-                            <div style="font-size: 4rem; margin-bottom: 1rem;">📸</div>
-                            <div>Logo de la Empresa</div>
-                            <div style="font-size: 0.9rem; color: #aaa; margin-top: 0.5rem;">Coloca aquí tu logo</div>
-                        </div>
+                        <img src="images/company.png" alt="El Secreto de la Nona - Empresa" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="productos" class="section products">
+      <section id="productos" class="section products">
             <div class="container">
                 <h2 class="section-title fade-in">Nuestro Producto</h2>
                 <div class="product-container">
                     <div class="product-card fade-in">
                         <div class="product-image">
-                            <div style="text-align: center; color: #666;">
-                                <div>Imagen del Producto</div>
-                                <div style="font-size: 0.8rem; margin-top: 0.5rem;">250g</div>
-                            </div>
+                            <img src="images/mermelada.png" alt="Mermelada de Fresa El Secreto de la Nona" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                         </div>
                         <h3 class="product-title">Mermelada de Fresa</h3>
                         <p class="product-description">Nuestra receta tradicional con fresas enteras, perfecta para desayunos y postres. Textura suave con trozos de fresa natural y todo el amor de la nona.</p>
@@ -559,7 +541,7 @@
                         <strong>📱 WhatsApp:</strong> +1 (809) 555-0123
                     </div>
                     <div class="contact-item">
-                        <strong>📧 Email:</strong> pedidos@elsecreto.do
+                        <strong>📧 Email:</strong> pedidos@test.com
                     </div>
                     <div class="contact-item">
                         <strong>📍 Ubicación:</strong> Santo Domingo, República Dominicana
