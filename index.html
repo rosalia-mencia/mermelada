@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dulce Tradición - Mermelada de Fresa Artesanal</title>
+    <title>El Secreto de la Nona - Mermelada de Fresa Artesanal</title>
     <style>
         * {
             margin: 0;
@@ -15,7 +15,7 @@
             font-family: 'Georgia', serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+            background: linear-gradient(135deg, #fdf5f6 0%, #f8eef0 100%);
         }
 
         .container {
@@ -26,10 +26,10 @@
 
         /* Header */
         header {
-            background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+            background: linear-gradient(135deg, #C35965 0%, #C24C5B 100%);
             color: white;
             padding: 1rem 0;
-            box-shadow: 0 4px 20px rgba(139, 0, 0, 0.3);
+            box-shadow: 0 4px 20px rgba(195, 89, 101, 0.3);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -61,13 +61,13 @@
         }
 
         .nav-links a:hover {
-            color: #ffcccb;
+            color: #F0A9B8;
             transform: translateY(-2px);
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, rgba(139, 0, 0, 0.9), rgba(220, 20, 60, 0.8)), 
+            background: linear-gradient(135deg, rgba(195, 89, 101, 0.9), rgba(194, 76, 91, 0.8)), 
                         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%23ffffff" opacity="0.1"/><circle cx="80" cy="40" r="3" fill="%23ffffff" opacity="0.1"/><circle cx="40" cy="80" r="1.5" fill="%23ffffff" opacity="0.1"/></svg>');
             color: white;
             padding: 100px 0;
@@ -116,7 +116,7 @@
         .cta-button {
             display: inline-block;
             background: linear-gradient(45deg, #FFD700, #FFA500);
-            color: #8B0000;
+            color: #C35965;
             padding: 15px 40px;
             border-radius: 50px;
             text-decoration: none;
@@ -139,7 +139,7 @@
         .section-title {
             text-align: center;
             font-size: 2.5rem;
-            color: #8B0000;
+            color: #C35965;
             margin-bottom: 3rem;
             position: relative;
         }
@@ -152,7 +152,7 @@
             transform: translateX(-50%);
             width: 100px;
             height: 4px;
-            background: linear-gradient(45deg, #DC143C, #FF6B6B);
+            background: linear-gradient(45deg, #C24C5B, #F0A9B8);
             border-radius: 2px;
         }
 
@@ -196,13 +196,12 @@
 
         /* Productos */
         .products {
-            background: linear-gradient(135deg, #fff8f8, #ffe0e0);
+            background: linear-gradient(135deg, #fdf8f9, #f5eef0);
         }
 
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
+        .product-container {
+            max-width: 400px;
+            margin: 0 auto;
         }
 
         .product-card {
@@ -210,15 +209,15 @@
             border-radius: 20px;
             padding: 2rem;
             text-align: center;
-            box-shadow: 0 15px 40px rgba(139, 0, 0, 0.1);
+            box-shadow: 0 15px 40px rgba(195, 89, 101, 0.1);
             transition: all 0.3s ease;
             border: 2px solid transparent;
         }
 
         .product-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 25px 50px rgba(139, 0, 0, 0.2);
-            border-color: #DC143C;
+            box-shadow: 0 25px 50px rgba(195, 89, 101, 0.2);
+            border-color: #C24C5B;
         }
 
         .product-image {
@@ -243,7 +242,7 @@
 
         .product-title {
             font-size: 1.5rem;
-            color: #8B0000;
+            color: #C35965;
             margin-bottom: 1rem;
         }
 
@@ -255,95 +254,166 @@
         .product-price {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #DC143C;
-        }
-
-        /* Comprar */
-        .shop {
-            background: white;
-        }
-
-        .shop-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: linear-gradient(135deg, #fff5f5, #ffe8e8);
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(139, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 2rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #8B0000;
-            font-weight: 600;
-        }
-
-        .form-group select, .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .form-group select:focus, .form-group input:focus, .form-group textarea:focus {
-            outline: none;
-            border-color: #DC143C;
-            box-shadow: 0 0 10px rgba(220, 20, 60, 0.2);
+            color: #C24C5B;
+            margin-bottom: 1.5rem;
         }
 
         .quantity-controls {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 1rem;
+            margin-top: 2rem;
         }
 
         .quantity-btn {
-            background: #DC143C;
+            background: #C35965;
             color: white;
             border: none;
             width: 40px;
             height: 40px;
             border-radius: 50%;
             cursor: pointer;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .quantity-btn:hover {
-            background: #B22222;
+            background: #BE4A56;
             transform: scale(1.1);
         }
 
-        .quantity-input {
-            width: 80px !important;
-            text-align: center;
+        .quantity-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+            transform: none;
         }
 
-        .order-summary {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            margin-top: 2rem;
-            border: 2px solid #DC143C;
-        }
-
-        .total {
+        .quantity-display {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #8B0000;
+            color: #C35965;
+            min-width: 50px;
             text-align: center;
+        }
+
+        /* Floating Cart Button */
+        .floating-cart {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #C35965, #C24C5B);
+            color: white;
+            border: none;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(195, 89, 101, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-cart:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(195, 89, 101, 0.6);
+        }
+
+        .floating-cart.show {
+            display: flex;
+            animation: bounceIn 0.5s ease-out;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #FFD700;
+            color: #C35965;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Thank You Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 3rem;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .modal h2 {
+            color: #C35965;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .modal p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .close-btn {
+            background: linear-gradient(45deg, #C35965, #C24C5B);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .close-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(195, 89, 101, 0.3);
         }
 
         /* Contacto */
         .contact {
-            background: linear-gradient(135deg, #8B0000, #DC143C);
+            background: linear-gradient(135deg, #C35965, #C24C5B);
             color: white;
         }
 
@@ -383,9 +453,17 @@
                 gap: 2rem;
             }
 
-            .quantity-controls {
-                flex-direction: column;
-                align-items: stretch;
+            .floating-cart {
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                font-size: 1.3rem;
+            }
+
+            .modal-content {
+                margin: 30% auto;
+                padding: 2rem;
             }
         }
 
@@ -405,12 +483,11 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Dulce Tradición</div>
+            <div class="logo">El Secreto de la Nona</div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#productos">Productos</a></li>
-                <li><a href="#comprar">Comprar</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -420,8 +497,8 @@
         <section id="inicio" class="hero">
             <div class="container">
                 <h1>Mermelada de Fresa Artesanal</h1>
-                <p>Desde el corazón de República Dominicana, te traemos el sabor auténtico de fresas frescas en cada frasco. Tradición familiar desde 1995.</p>
-                <a href="#productos" class="cta-button">Descubre Nuestros Sabores</a>
+                <p>Desde el corazón de República Dominicana, te traemos el sabor auténtico de fresas frescas en cada frasco. El secreto de la nona, ahora en tu mesa.</p>
+                <a href="#productos" class="cta-button">Descubre Nuestro Sabor</a>
             </div>
         </section>
 
@@ -430,11 +507,13 @@
                 <h2 class="section-title fade-in">Nuestra Historia</h2>
                 <div class="about-content">
                     <div class="about-text fade-in">
-                        <p>En el corazón de República Dominicana, nuestra familia ha perfeccionado el arte de crear mermeladas artesanales por más de 25 años. Comenzamos con una receta tradicional heredada de nuestra abuela, quien nos enseñó que el secreto está en la paciencia y en usar solo las mejores fresas de la región.</p>
+                        <p>Detrás de cada frasco de El Secreto de la Nona hay una historia llena de cariño, tradición y sabores que evocan la cocina de casa.</p>
                         
-                        <p>Cada frasco de nuestra mermelada contiene la esencia de nuestra tierra tropical, las fresas más dulces y jugosas, cultivadas con amor por agricultores locales que conocemos personalmente. Sin conservantes artificiales, sin prisas, solo tradición pura.</p>
+                        <p>Inspirada en las recetas caseras que pasaban de generación en generación, nuestra mermelada nace del deseo de mantener viva esa esencia familiar, donde los ingredientes eran naturales, frescos y el sabor era auténtico.</p>
                         
-                        <p>Hoy, tres generaciones después, seguimos preparando cada lote a mano, manteniendo viva la tradición que nos convierte en la mermelada de fresa más auténtica de la República Dominicana.</p>
+                        <p>Nuestra marca rinde homenaje a "la nona", esa figura sabia y amorosa que siempre tenía un secreto culinario bajo la manga.</p>
+                        
+                        <p>Hoy, ese secreto lo compartimos contigo, en cada cucharada.</p>
                     </div>
                     <div class="about-image fade-in">
                         <div style="text-align: center;">
@@ -449,8 +528,8 @@
 
         <section id="productos" class="section products">
             <div class="container">
-                <h2 class="section-title fade-in">Nuestros Productos</h2>
-                <div class="products-grid">
+                <h2 class="section-title fade-in">Nuestro Producto</h2>
+                <div class="product-container">
                     <div class="product-card fade-in">
                         <div class="product-image">
                             <div style="text-align: center; color: #666;">
@@ -458,111 +537,15 @@
                                 <div style="font-size: 0.8rem; margin-top: 0.5rem;">250g</div>
                             </div>
                         </div>
-                        <h3 class="product-title">Mermelada Clásica</h3>
-                        <p class="product-description">Nuestra receta original con fresas enteras, perfecta para desayunos y postres. Textura suave con trozos de fresa natural.</p>
+                        <h3 class="product-title">Mermelada de Fresa</h3>
+                        <p class="product-description">Nuestra receta tradicional con fresas enteras, perfecta para desayunos y postres. Textura suave con trozos de fresa natural y todo el amor de la nona.</p>
                         <div class="product-price">RD$ 280</div>
-                    </div>
-
-                    <div class="product-card fade-in">
-                        <div class="product-image">
-                            <div style="text-align: center; color: #666;">
-                                <div>Imagen del Producto</div>
-                                <div style="font-size: 0.8rem; margin-top: 0.5rem;">250g</div>
-                            </div>
-                        </div>
-                        <h3 class="product-title">Mermelada Premium</h3>
-                        <p class="product-description">Elaborada con fresas seleccionadas de temporada, menor contenido de azúcar y trozos grandes de fruta fresca.</p>
-                        <div class="product-price">RD$ 350</div>
-                    </div>
-
-                    <div class="product-card fade-in">
-                        <div class="product-image">
-                            <div style="text-align: center; color: #666;">
-                                <div>Imagen del Producto</div>
-                                <div style="font-size: 0.8rem; margin-top: 0.5rem;">500g</div>
-                            </div>
-                        </div>
-                        <h3 class="product-title">Tamaño Familiar</h3>
-                        <p class="product-description">Nuestra mermelada clásica en presentación familiar de 500g, ideal para hogares que aman el sabor auténtico.</p>
-                        <div class="product-price">RD$ 480</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="comprar" class="section shop">
-            <div class="container">
-                <h2 class="section-title fade-in">Realiza tu Pedido</h2>
-                <div class="shop-form fade-in">
-                    <div class="form-group">
-                        <label for="producto">Selecciona tu producto:</label>
-                        <select id="producto" name="producto">
-                            <option value="">Elige una opción</option>
-                            <option value="clasica-250" data-price="280">Mermelada Clásica 250g - RD$ 280</option>
-                            <option value="premium-250" data-price="350">Mermelada Premium 250g - RD$ 350</option>
-                            <option value="familiar-500" data-price="480">Tamaño Familiar 500g - RD$ 480</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cantidad">Cantidad:</label>
+                        
                         <div class="quantity-controls">
-                            <button type="button" class="quantity-btn" onclick="changeQuantity(-1)">-</button>
-                            <input type="number" id="cantidad" class="quantity-input" value="1" min="1" max="20">
-                            <button type="button" class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                            <button class="quantity-btn" onclick="changeQuantity(-1)" id="decreaseBtn">-</button>
+                            <div class="quantity-display" id="quantityDisplay">0</div>
+                            <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
                         </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="telefono">WhatsApp:</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="809-xxx-xxxx" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="direccion">Dirección de entrega:</label>
-                        <input type="text" id="direccion" name="direccion" placeholder="Dirección completa para la entrega" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="notas">Notas adicionales (opcional):</label>
-                        <textarea id="notas" name="notas" placeholder="Comentarios especiales para tu pedido..." style="min-height: 80px; resize: vertical; font-family: inherit;"></textarea>
-                    </div>
-
-                    <div class="order-summary">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-                            <span>Producto:</span>
-                            <span id="selected-product">-</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-                            <span>Cantidad:</span>
-                            <span id="selected-quantity">1</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-                            <span>Subtotal:</span>
-                            <span id="subtotal">RD$ 0</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px; color: #28a745;">
-                            <span>Envío:</span>
-                            <span>GRATIS</span>
-                        </div>
-                        <hr style="border: none; height: 2px; background: #DC143C; margin: 15px 0;">
-                        <div class="total" id="total">Total: RD$ 0</div>
-                        <p style="text-align: center; margin-top: 1rem; color: #666; font-size: 0.9rem;">*Entrega gratuita en Santo Domingo y área metropolitana</p>
-                    </div>
-
-                    <div style="text-align: center; margin-top: 2rem;">
-                        <button type="submit" class="cta-button" onclick="sendWhatsAppOrder()">
-                            📱 Enviar Pedido por WhatsApp
-                        </button>
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 1rem; color: #666; font-size: 0.9rem;">
-                        Tu pedido será enviado directamente a nuestro WhatsApp para confirmación inmediata
                     </div>
                 </div>
             </div>
@@ -576,7 +559,7 @@
                         <strong>📱 WhatsApp:</strong> +1 (809) 555-0123
                     </div>
                     <div class="contact-item">
-                        <strong>📧 Email:</strong> pedidos@dulcetradicion.do
+                        <strong>📧 Email:</strong> pedidos@elsecreto.do
                     </div>
                     <div class="contact-item">
                         <strong>📍 Ubicación:</strong> Santo Domingo, República Dominicana
@@ -614,102 +597,76 @@
         </section>
     </main>
 
+    <!-- Floating Cart Button -->
+    <button class="floating-cart" id="floatingCart" onclick="processPayment()">
+        🛒
+        <span class="cart-badge" id="cartBadge">0</span>
+    </button>
+
+    <!-- Thank You Modal -->
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+            <h2>¡Gracias por tu compra! 🎉</h2>
+            <p>Tu pedido ha sido procesado exitosamente. El secreto de la nona pronto estará en tu mesa.</p>
+            <p>Te contactaremos pronto para coordinar la entrega.</p>
+            <button class="close-btn" onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
-            <p>&copy; 2025 Dulce Tradición - Mermelada Artesanal de República Dominicana. Todos los derechos reservados.</p>
+            <p>&copy; 2025 El Secreto de la Nona - Mermelada Artesanal de República Dominicana. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script>
-        // Funcionalidad para el carrito de compras
+        let quantity = 0;
+
         function changeQuantity(delta) {
-            const quantityInput = document.getElementById('cantidad');
-            let currentValue = parseInt(quantityInput.value) || 1;
-            let newValue = currentValue + delta;
+            quantity += delta;
+            if (quantity < 0) quantity = 0;
             
-            if (newValue < 1) newValue = 1;
-            if (newValue > 20) newValue = 20;
-            
-            quantityInput.value = newValue;
-            updateTotal();
+            updateDisplay();
         }
 
-        function updateTotal() {
-            const productSelect = document.getElementById('producto');
-            const quantityInput = document.getElementById('cantidad');
-            const totalElement = document.getElementById('total');
-            const subtotalElement = document.getElementById('subtotal');
-            const selectedProductElement = document.getElementById('selected-product');
-            const selectedQuantityElement = document.getElementById('selected-quantity');
+        function updateDisplay() {
+            const quantityDisplay = document.getElementById('quantityDisplay');
+            const decreaseBtn = document.getElementById('decreaseBtn');
+            const floatingCart = document.getElementById('floatingCart');
+            const cartBadge = document.getElementById('cartBadge');
             
-            const selectedOption = productSelect.options[productSelect.selectedIndex];
-            const price = selectedOption.getAttribute('data-price');
-            const quantity = parseInt(quantityInput.value) || 1;
+            quantityDisplay.textContent = quantity;
+            decreaseBtn.disabled = quantity === 0;
+            cartBadge.textContent = quantity;
             
-            // Actualizar elementos del resumen
-            selectedQuantityElement.textContent = quantity;
-            
-            if (price && productSelect.value) {
-                const total = price * quantity;
-                selectedProductElement.textContent = selectedOption.text;
-                subtotalElement.textContent = `RD$ ${total.toLocaleString()}`;
-                totalElement.textContent = `Total: RD$ ${total.toLocaleString()}`;
+            if (quantity > 0) {
+                floatingCart.classList.add('show');
             } else {
-                selectedProductElement.textContent = '-';
-                subtotalElement.textContent = 'RD$ 0';
-                totalElement.textContent = 'Total: RD$ 0';
+                floatingCart.classList.remove('show');
             }
         }
 
-        function sendWhatsAppOrder() {
-            const producto = document.getElementById('producto');
-            const cantidad = document.getElementById('cantidad').value;
-            const nombre = document.getElementById('nombre').value;
-            const telefono = document.getElementById('telefono').value;
-            const direccion = document.getElementById('direccion').value;
-            const notas = document.getElementById('notas').value;
-            
-            if (!producto.value || !nombre || !telefono || !direccion) {
-                alert('Por favor completa todos los campos requeridos.');
-                return;
-            }
-            
-            const selectedOption = producto.options[producto.selectedIndex];
-            const price = selectedOption.getAttribute('data-price');
-            const total = price * cantidad;
-            
-            // Crear mensaje para WhatsApp
-            let mensaje = `🍓 *NUEVO PEDIDO - Dulce Tradición*\n\n`;
-            mensaje += `👤 *Cliente:* ${nombre}\n`;
-            mensaje += `📱 *Teléfono:* ${telefono}\n`;
-            mensaje += `📍 *Dirección:* ${direccion}\n\n`;
-            mensaje += `🛒 *PEDIDO:*\n`;
-            mensaje += `• ${selectedOption.text}\n`;
-            mensaje += `• Cantidad: ${cantidad}\n`;
-            mensaje += `💰 *Total: RD$ ${total.toLocaleString()}*\n\n`;
-            
-            if (notas) {
-                mensaje += `📝 *Notas:* ${notas}\n\n`;
-            }
-            
-            mensaje += `✅ *Confirma tu pedido para proceder con la entrega*`;
-            
-            // Número de WhatsApp (reemplaza con el número real)
-            const numeroWhatsApp = "18095550123"; // Formato internacional sin +
-            
-            // Crear URL de WhatsApp
-            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
-            
-            // Abrir WhatsApp
-            window.open(urlWhatsApp, '_blank');
-            
-            // Mostrar mensaje de confirmación
-            alert('Tu pedido está siendo enviado por WhatsApp. ¡Te contactaremos pronto!');
+        function processPayment() {
+            const modal = document.getElementById('thankYouModal');
+            modal.style.display = 'block';
         }
 
-        // Event listeners
-        document.getElementById('producto').addEventListener('change', updateTotal);
-        document.getElementById('cantidad').addEventListener('input', updateTotal);
+        function closeModal() {
+            const modal = document.getElementById('thankYouModal');
+            modal.style.display = 'none';
+            
+            // Reset the page
+            quantity = 0;
+            updateDisplay();
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('thankYouModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
 
         // Animación de scroll
         function isInViewport(element) {
@@ -749,14 +706,9 @@
         window.addEventListener('scroll', handleScrollAnimations);
         window.addEventListener('load', handleScrollAnimations);
 
-        // Manejar envío del formulario
+        // Initialize
         document.addEventListener('DOMContentLoaded', function() {
-            // Event listeners
-            document.getElementById('producto').addEventListener('change', updateTotal);
-            document.getElementById('cantidad').addEventListener('input', updateTotal);
-            
-            // Inicializar
-            updateTotal();
+            updateDisplay();
         });
     </script>
 </body>
